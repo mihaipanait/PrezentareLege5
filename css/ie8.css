@@ -1,0 +1,10 @@
+.newsletter input {
+	position: relative;
+	top: -0px;
+	padding-top:9px;
+}
+
+.top-message .content {
+background-color: #89949e;
+padding: 10px 25px;
+}
