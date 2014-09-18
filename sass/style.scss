@@ -29,6 +29,10 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+body{
+	margin-top: 111px;
+}
+
 .lead {
 	font-size: 18px;
 	font-weight: 400;
@@ -74,18 +78,53 @@ p {
 /* Slider Section */
 
 .slider-section{
-	margin-top: 111px;
+	// margin-top: 111px;
 	background-color: #f4f2ef;
+
+	display: none;
 }
 
-/* top content */
+/* Ecosystem content */
 
-.top-header {
+.ecosystem {
 	padding-top: 30px;
 	padding-bottom: 20px;
 	color: #f8f8f8;	
-	background-color: #f6f4f3;
-	border-top: #d7d9da 3px solid;
+	//background-color: #f6f4f3;
+	background: $main-color;
+	//border-top: #d7d9da 3px solid;
+
+	.top-message {
+		position: relative;
+		/* padding-top: 80px; */
+		padding-bottom: 10px;
+		padding-right: 0px;
+
+		.title {
+			width: 100%;
+			background-color: #ddddde;
+			padding: 10px 25px;
+
+			> h2 {
+				margin: 0;
+				font-size: 30px;
+				font-weight:300;
+				color: #2b2937;
+			}
+		}
+
+		.content {
+			background-color: rgba(92,109,123,0.7);
+			padding: 10px 25px;
+
+			> p {
+				font-size:13px;
+				margin-bottom:10px;
+				color:#fff;
+				text-align: justify;
+			}
+		}
+	}
 
 	.versions-container {
 		margin-left: 20px;
@@ -156,7 +195,8 @@ p {
 
 .mobile-ecosystem {
 	padding-top: 50px;
-	background-color: #f3f2ee;
+	//background-color: #f3f2ee;
+	background: $main-color;
 
 	.versions-container {
 		position: relative;
@@ -226,46 +266,13 @@ p {
 	}
 }
 
-.top-message {
-	position: relative;
-	/* padding-top: 80px; */
-	padding-bottom: 10px;
-	padding-right: 0px;
-
-	.title {
-		width: 100%;
-		background-color: #ddddde;
-		padding: 10px 25px;
-
-		> h2 {
-			margin: 0;
-			font-size: 30px;
-			font-weight:300;
-			color: #2b2937;
-		}
-	}
-
-	.content {
-		background-color: rgba(92,109,123,0.7);
-		padding: 10px 25px;
-
-		> p {
-			font-size:13px;
-			margin-bottom:10px;
-			color:#fff;
-			text-align: justify;
-		}
-	}
-}
-
-.list-inline > li {
-	padding-left: 0;
-}
 
 /* About content */
 
 .about {
+	display: none;
 	text-align: justify;
+
 	h2 {
 		font-size:30px;
 		margin-bottom:15px;
@@ -362,7 +369,7 @@ p {
 
 /* Features content */
 .features{
-	padding: 0 0 30px;
+	padding: 30px 0 30px;
 
 	.container{
 		position: relative;
@@ -763,6 +770,10 @@ p {
 				color:#666;
 				background:transparent;
 			}
+		}
+
+		&.list-inline > li {
+			padding-left: 0;
 		}
 	}
 }

@@ -7,6 +7,9 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
+body {
+  margin-top: 111px; }
+
 .lead {
   font-size: 18px;
   font-weight: 400; }
@@ -42,61 +45,82 @@ p {
 
 /* Slider Section */
 .slider-section {
-  margin-top: 111px;
-  background-color: #f4f2ef; }
+  background-color: #f4f2ef;
+  display: none; }
 
-/* top content */
-.top-header {
+/* Ecosystem content */
+.ecosystem {
   padding-top: 30px;
   padding-bottom: 20px;
   color: #f8f8f8;
-  background-color: #f6f4f3;
-  border-top: #d7d9da 3px solid; }
-  .top-header .versions-container {
+  background: #eeeeee; }
+  .ecosystem .top-message {
+    position: relative;
+    /* padding-top: 80px; */
+    padding-bottom: 10px;
+    padding-right: 0px; }
+    .ecosystem .top-message .title {
+      width: 100%;
+      background-color: #ddddde;
+      padding: 10px 25px; }
+      .ecosystem .top-message .title > h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 300;
+        color: #2b2937; }
+    .ecosystem .top-message .content {
+      background-color: rgba(92, 109, 123, 0.7);
+      padding: 10px 25px; }
+      .ecosystem .top-message .content > p {
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: #fff;
+        text-align: justify; }
+  .ecosystem .versions-container {
     margin-left: 20px;
     padding-bottom: 15px; }
-    .top-header .versions-container .image-link {
+    .ecosystem .versions-container .image-link {
       position: absolute;
       width: 120px;
       height: 120px; }
-    .top-header .versions-container .online-btn {
+    .ecosystem .versions-container .online-btn {
       top: 121px;
       left: 29px;
       background: url("../images/online.png") no-repeat center center; }
-      .top-header .versions-container .online-btn:hover {
+      .ecosystem .versions-container .online-btn:hover {
         background-image: url("../images/online-over.png"); }
-    .top-header .versions-container .cloud-btn {
+    .ecosystem .versions-container .cloud-btn {
       top: -5px;
       left: 270px;
       background: url("../images/cloud.png") no-repeat center center; }
-      .top-header .versions-container .cloud-btn:hover {
+      .ecosystem .versions-container .cloud-btn:hover {
         background-image: url("../images/cloud-over.png"); }
-    .top-header .versions-container .mobile-btn {
+    .ecosystem .versions-container .mobile-btn {
       top: 0;
       left: 100px;
       background: url("../images/mobile.png") no-repeat center center; }
-      .top-header .versions-container .mobile-btn:hover {
+      .ecosystem .versions-container .mobile-btn:hover {
         background-image: url("../images/mobile-over.png"); }
-    .top-header .versions-container .desktop-btn {
+    .ecosystem .versions-container .desktop-btn {
       top: 200px;
       left: 125px;
       background: url("../images/desktop.png") no-repeat center center; }
-      .top-header .versions-container .desktop-btn:hover {
+      .ecosystem .versions-container .desktop-btn:hover {
         background-image: url("../images/desktop-over.png"); }
-    .top-header .versions-container .lege-btn {
+    .ecosystem .versions-container .lege-btn {
       position: absolute;
       width: 240px;
       height: 90px;
       top: 125px;
       left: 218px;
       background: url("../images/logo-lege.png") no-repeat center center; }
-      .top-header .versions-container .lege-btn:hover {
+      .ecosystem .versions-container .lege-btn:hover {
         background-image: url("../images/logo-lege-over.png"); }
 
 /* mobile ecosystem */
 .mobile-ecosystem {
   padding-top: 50px;
-  background-color: #f3f2ee; }
+  background: #eeeeee; }
   .mobile-ecosystem .versions-container {
     position: relative;
     width: 400px;
@@ -140,34 +164,9 @@ p {
       .mobile-ecosystem .versions-container .lege-btn:hover {
         background-image: url("../images/logo-lege-over.png"); }
 
-.top-message {
-  position: relative;
-  /* padding-top: 80px; */
-  padding-bottom: 10px;
-  padding-right: 0px; }
-  .top-message .title {
-    width: 100%;
-    background-color: #ddddde;
-    padding: 10px 25px; }
-    .top-message .title > h2 {
-      margin: 0;
-      font-size: 30px;
-      font-weight: 300;
-      color: #2b2937; }
-  .top-message .content {
-    background-color: rgba(92, 109, 123, 0.7);
-    padding: 10px 25px; }
-    .top-message .content > p {
-      font-size: 13px;
-      margin-bottom: 10px;
-      color: #fff;
-      text-align: justify; }
-
-.list-inline > li {
-  padding-left: 0; }
-
 /* About content */
 .about {
+  display: none;
   text-align: justify; }
   .about h2 {
     font-size: 30px;
@@ -229,7 +228,7 @@ p {
 
 /* Features content */
 .features {
-  padding: 0 0 30px; }
+  padding: 30px 0 30px; }
   .features .container {
     position: relative; }
     .features .container .feature {
@@ -458,6 +457,8 @@ p {
       .contact .cinfo-social-buttons .btn:hover {
         color: #666;
         background: transparent; }
+    .contact .cinfo-social-buttons.list-inline > li {
+      padding-left: 0; }
 
 /* Map Styles */
 .gmap {
