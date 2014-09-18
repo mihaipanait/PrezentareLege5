@@ -245,7 +245,9 @@ p {
         background: url("../images/magenta.png") repeat center center; }
       .features .container .feature .front {
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        cursor: pointer;
+        cursor: hand; }
         .features .container .feature .front img {
           filter: none;
           -webkit-filter: grayscale(0%);
@@ -303,7 +305,25 @@ p {
           .features .container .feature.big .front .title-box {
             width: 320px;
             height: 125px;
-            top: 205px; }
+            top: 205px;
+            -ms-transform: scale(1, 1) translate(0px, 0px);
+            /* IE 9 */
+            -webkit-transform: scale(1, 1) translate(0px, 0px);
+            /* Chrome, Safari, Opera */
+            transform: scale(1, 1) translate(0px, 0px);
+            -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
+            transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
+          .features .container .feature.big .front:hover .title-box {
+            width: 320px;
+            height: 125px;
+            top: 205px;
+            -ms-transform: scale(0.8, 0.8) translate(-20px, 0px);
+            /* IE 9 */
+            -webkit-transform: scale(0.8, 0.8) translate(-20px, 0px);
+            /* Chrome, Safari, Opera */
+            transform: scale(0.8, 0.8) translate(-20px, 0px);
+            -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
+            transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
         .features .container .feature.big .back {
           height: 337px; }
       .features .container .feature.medium {
@@ -318,8 +338,8 @@ p {
             height: auto; }
           .features .container .feature.medium .front .title-box {
             width: 320px;
-            height: 90px;
-            top: 70px; }
+            height: 74px;
+            top: 85px; }
             .features .container .feature.medium .front .title-box p {
               display: none; }
         .features .container .feature.medium .back {
@@ -344,7 +364,7 @@ p {
               display: none; }
         .features .container .feature.small .back {
           height: 168px; }
-      .features .container .feature:hover .front {
+      .features .container .feature.selected .front {
         max-height: 0; }
     .features .container:hover .feature:not(:hover) .front img {
       filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");

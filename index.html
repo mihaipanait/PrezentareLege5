@@ -179,7 +179,7 @@
 
 <!-- Features -->
 <a class="anchor" id="features"></a>
-<div class="features">
+<div class="features" ng-controller="FeaturesController as featuresCtrl">
 	<div class="container">	
 		<div class="row">
 		<div class="col-md-12 col-lg-12">		
@@ -187,11 +187,11 @@
 			<!-- Row One -->
 			<div class="col-md-6 col-lg-4 no-padding">
 
-				<!-- Feature Start -->
-				<div class="feature big">
+				<!-- Feature 0 Start -->
+				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[0], 'selected': featuresCtrl.isSelected[0]}">
 					<div class="front">
-						<img src="images/features/1.jpg">
-						<div class="title-box red">
+						<img src="images/features/1.jpg" ng-click="featuresCtrl.ToggleSelect(0)">
+						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(0)">
 							<h4>Căutare rapidă</h4>
 							<p>Căutarea rapidă se realizează la nivelul întregii baze de date și generează instant rezultate relevante.</p>
 						</div>
@@ -199,7 +199,7 @@
 					</div>
 					<div class="back red">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(0)">x</span>
 							<h4>Căutare rapidă</h4>
 							<p>Căutarea rapidă se realizează la nivelul întregii baze de date și generează instant rezultate relevante.</p>
 							<p>Apelând la cautărea rapidă, prin simpla introducere în căsuţa de căutare a sintagmelor sau cuvintelor cheie semnificative, se va genera o lista de rezultate, ordonate în funcţie de relevanța lor, care scade pe măsura ce coborâți în lista de rezultate.</p>
@@ -210,11 +210,11 @@
 				</div>
 				<!-- Feature End -->
 
-				<!-- Feature Start -->
-				<div class="feature small">
+				<!-- Feature 1 Start -->
+				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[1], 'selected': featuresCtrl.isSelected[1]}">
 					<div class="front">
-						<img src="images/features/8.jpg">
-						<div class="title-box blue">
+						<img src="images/features/8.jpg" ng-click="featuresCtrl.ToggleSelect(1)">
+						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(1)">
 							<h4>Comparare consolidări</h4>
 							<p>Funcția „Compară consolidări” ofera analiza comparativă și evidențierea modificărilor pe textul actului de interes.</p>
 						</div>
@@ -222,7 +222,7 @@
 					</div>
 					<div class="back blue">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(1)">x</span>
 							<h4>Comparare consolidări</h4>
 							<p>Funcție unică și revoluționară, „Compară consolidări” reprezintă pentru utilizatorul de Lege5 una dintre cele mai importante instrumente de lucru pentru analiza comparativă și evidențierea modificărilor pe textul actului de interes. Aceasta este utilă pentru a confrunta versiunea consolidată curentă a unui act normativ, cu reglementările de la o anumită dată.</p>
 							<p>Astfel, dacă un act normativ are la nivel de paragraf trimiteri la multiple acte, atunci funcția permite compararea cu oricare dintre aceste acte.</p>
@@ -232,11 +232,11 @@
 				</div>
 				<!-- Feature End -->
 
-				<!-- Feature Start -->
-				<div class="feature small">
+				<!-- Feature 2 Start -->
+				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[2], 'selected': featuresCtrl.isSelected[2]}">
 					<div class="front">
-						<img src="images/features/2.jpg">
-						<div class="title-box green">
+						<img src="images/features/2.jpg" ng-click="featuresCtrl.ToggleSelect(2)">
+						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(2)">
 							<h4>Istoric legislativ</h4>
 							<p>Cu ajutorul istoricului legislativ, puteţi vedea cronologic și sintetizat informaţiile despre actele normative.</p>
 						</div>
@@ -244,7 +244,7 @@
 					</div>
 					<div class="back green">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(2)">x</span>
 							<h4>Istoric legislativ</h4>
 							<p>Trebuie să analizaţi nenumărate acte pentru a reconstitui cadrul legal al domeniului unui act normativ care vă interesează? Cu ajutorul istoricului legislativ, puteţi vedea cronologic și sintetizat informaţiile despre actele normative care reglementează un domeniu şi modificările suferite de acestea.</p>
 							<p>Ca şi celelalte funcţii de afişare relaţii la nivel de document şi Istoricul legislativ prezintă şi face trimitere la relaţiile suferite. Însă, de această dată, sunt prezentate relaţiile pe toate actele din domeniul din care care face parte actul de interes.</p>
@@ -259,11 +259,11 @@
 			<!-- Row Two -->
 			<div class="col-md-6 col-lg-4 no-padding">
 
-				<!-- Feature Start -->
-				<div class="feature medium">
+				<!-- Feature 3 Start -->
+				<div class="feature medium" ng-class="{'active': featuresCtrl.isActive[3], 'selected': featuresCtrl.isSelected[3]}">
 					<div class="front">
-						<img src="images/features/3.jpg">
-						<div class="title-box blue">
+						<img src="images/features/3.jpg" ng-click="featuresCtrl.ToggleSelect(3)">
+						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(3)">
 							<h4>Versionare şi comparare text paragraf</h4>
 							<p>Corelarea actelor la nivel de paragraf, marcarea relațiilor la nivel de paragraf și compararea și evidențierea modificărilor.</p>
 						</div>
@@ -271,7 +271,7 @@
 					</div>
 					<div class="back blue">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(3)">x</span>
 							<h4>Versionare şi comparare text paragraf</h4>
 							<p>Una din funcțiile cheie ale aplicaţiei Lege5 o reprezintă corelarea actelor la nivel de paragraf, marcarea relațiilor la nivel de paragraf și compararea și evidențierea modificărilor la nivel de paragraf.</p>
 							<p>Așa cum am văzut și până acum, în aplicaţia Lege5 compararea versiunilor se face în profunzimea actului normativ până la nivel de paragraf. Așadar, folosind această funcție obțineți la nivel de paragraf modificat, evidențierea modificărilor survenite.</p>
@@ -281,11 +281,11 @@
 				</div>
 				<!-- Feature End -->
 
-				<!-- Feature Start -->
-				<div class="feature big">
+				<!-- Feature 4 Start -->
+				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[4], 'selected': featuresCtrl.isSelected[4]}">
 					<div class="front">
-						<img src="images/features/4.jpg">
-						<div class="title-box red">
+						<img src="images/features/4.jpg" ng-click="featuresCtrl.ToggleSelect(4)">
+						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(4)">
 							<h4>Comentarii expert la nivel de paragraf</h4>
 							<p>Consultanţi cu înaltă competenţă profesională în domeniile juridic, fiscal, contabilitate oferă expertiză pentru înţelegerea aprofundată.</p>
 						</div>
@@ -293,7 +293,7 @@
 					</div>
 					<div class="back red">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(4)">x</span>
 							<h4>Comentarii expert la nivel de paragraf</h4>
 							<p>Consultanţi cu înaltă competenţă profesională în domeniile juridic, fiscal, contabilitate oferă expertiză pentru înţelegerea aprofundată a unor părți din documentele şi actele normative prezente în Lege5 Online.</p>
 							<p>Astfel, în Lege5.ro veți găsi comentarii ale expertilor la nivel de paragraf, pentru cele mai importante acte: Codul de procedură civilă, Codul muncii, Codul fiscal; Codul de procedură penală; Legea societăţilor comerciale; Legea contabilităţii.</p>
@@ -308,11 +308,11 @@
 			<!-- Row Three -->
 			<div class="col-md-6 col-lg-4 no-padding">
 
-				<!-- Feature Start -->
-				<div class="feature small">
+				<!-- Feature 5 Start -->
+				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[5], 'selected': featuresCtrl.isSelected[5]}">
 					<div class="front">
-						<img src="images/features/6.jpg">
-						<div class="title-box green">
+						<img src="images/features/6.jpg" ng-click="featuresCtrl.ToggleSelect(5)">
+						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(5)">
 							<h4>Aplicaţie Mobile dedicată</h4>
 							<p>Descărcaţi gratuit aplicaţia din Google Play, Aple Store sau Windows Store.</p>
 						</div>
@@ -320,7 +320,7 @@
 					</div>
 					<div class="back green">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(5)">x</span>
 							<h4>Aplicaţie Mobile dedicată</h4>
 							<p>Descărcaţi gratuit aplicaţia din Google Play, Aple Store sau Windows Store. Odată instalată, vă va permite să aflaţi în timp real noutăţile legislative.</p>
 							<p>Avantajele aplicaţiei Lege5 Mobile cresc prin achiziţionarea unui abonament. Logarea se face cu user-ul şi parola aferente contului dvs. de Lege5 Online.</p>
@@ -331,11 +331,11 @@
 				</div>
 				<!-- Feature End -->
 
-				<!-- Feature Start -->
-				<div class="feature small">
+				<!-- Feature 6 Start -->
+				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[6], 'selected': featuresCtrl.isSelected[6]}">
 					<div class="front">
-						<img src="images/features/7.jpg">
-						<div class="title-box blue">
+						<img src="images/features/7.jpg" ng-click="featuresCtrl.ToggleSelect(6)">
+						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(6)">
 							<h4>Notificări</h4>
 							<p>Notificările pe care vi le trimite Lege5 Online sunt notificări legislative şi notificări de sistem Lege5.</p>
 						</div>
@@ -343,7 +343,7 @@
 					</div>
 					<div class="back blue">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(6)">x</span>
 							<h4>Notificări</h4>
 							<p>Notificările pe care vi le trimite Lege5 Online sunt notificări legislative şi notificări de sistem Lege5. Sistemul de notificări unic şi specific Lege5 vă permite să fiţi informaţi asupra noutăţilor legislative, oriunde vă aflaţi şi oricând aveţi timp sau nevoie să consultaţi legislaţia.</p>
 							<p>În aplicaţie primiţi notificări atât asupra modificărilor pe actele setate ca şi favorite de către dvs. cât şi asupra modificărilor/noutăţilor legislative de interes general. Cu un simplu clik pe modificările anunţate vedeţi detalierea acestora.</p>
@@ -353,11 +353,11 @@
 				</div>
 				<!-- Feature End -->
 
-				<!-- Feature Start -->
-				<div class="feature big">
+				<!-- Feature 7 Start -->
+				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[7], 'selected': featuresCtrl.isSelected[7]}">
 					<div class="front">
-						<img src="images/features/5.jpg">
-						<div class="title-box green">
+						<img src="images/features/5.jpg" ng-click="featuresCtrl.ToggleSelect(7)">
+						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(7)">
 							<h4>Căutare şi urmărire dosare în instanţă</h4>
 							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns cea mai nouă modificare din parcursul dosarului.</p>
 						</div>
@@ -365,7 +365,7 @@
 					</div>
 					<div class="back green">
 						<div class="description-box">
-							<span class="close">x</span>
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(7)">x</span>
 							<h4>Căutare şi urmărire dosare în instanţă</h4>
 							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns cea mai nouă modificare din parcursul dosarului – adică data, ora la care va avea loc următoarea şedinţă de judecată şi instanţa unde se va judeca.</p>
 							<p>Cunoscând numărul dosarului sau cel puţin numele unei părţi implicate, oricine se poate informa asupra fluxului unui dosar în instanţă. În funcție de stadiul dosarului, veţi avea acces la o serie de informații publice cum ar fi numele părților implicate, instanța, secția, completul, căi de atac, istoricul ședințelor precum și soluțiile pe scurt ale acestora.</p>

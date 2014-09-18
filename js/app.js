@@ -6,6 +6,37 @@ app.directive('prettyp', function(){
   }
 });
 
+app.controller('FeaturesController', ['$scope', function($scope) {
+
+  	this.isActive = new Array(12);
+  	this.isSelected = new Array(12);
+
+  	this.ToggleSelect = function(index){  		
+  		this.isSelected[index] = !this.isSelected[index];  	
+  		this.deselectOthers(index);	
+  	};
+
+  	this.deselectAll = function(){
+  		for (var i = 0; i < this.isSelected.length; ++i) { this.isSelected[i] = false; }
+  	};
+
+  	this.deselectOthers = function(index){
+  		for (var i = 0; i < this.isSelected.length; ++i) { 
+  			if(index !== i) this.isSelected[i] = false; }
+  	};
+
+  	this.dezactivateAll = function(){
+  		for (var i = 0; i < this.isActivated.length; ++i) { this.isActivated[i] = false; }
+  	};
+
+  	this.dezactivateOthers = function(index){
+  		for (var i = 0; i < this.isActivated.length; ++i) { 
+  			if(index !== i) this.isActivated[i] = false;
+  		}
+  	};
+	
+}]);
+
 app.config(function($stateProvider, $urlRouterProvider, $stickyStateProvider){ 
 
 	$urlRouterProvider.otherwise("/")
