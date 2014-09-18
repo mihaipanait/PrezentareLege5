@@ -52,8 +52,7 @@ p {
 .ecosystem {
   padding-top: 30px;
   padding-bottom: 20px;
-  color: #f8f8f8;
-  background: #eeeeee; }
+  color: #f8f8f8; }
   .ecosystem .top-message {
     position: relative;
     /* padding-top: 80px; */
@@ -119,8 +118,7 @@ p {
 
 /* mobile ecosystem */
 .mobile-ecosystem {
-  padding-top: 50px;
-  background: #eeeeee; }
+  padding-top: 50px; }
   .mobile-ecosystem .versions-container {
     position: relative;
     width: 400px;
@@ -228,7 +226,8 @@ p {
 
 /* Features content */
 .features {
-  padding: 30px 0 30px; }
+  padding: 30px 0 30px;
+  background: #eeeeee; }
   .features .container {
     position: relative; }
     .features .container .feature {
@@ -365,6 +364,12 @@ p {
       .features .container .feature.medium {
         width: 337px;
         height: 168px; }
+        .features .container .feature.medium.selected {
+          overflow: visible; }
+          .features .container .feature.medium.selected .back {
+            height: 337px;
+            -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
+            transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
         .features .container .feature.medium .front {
           max-height: 168px;
           -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
