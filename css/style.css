@@ -364,12 +364,6 @@ p {
       .features .container .feature.medium {
         width: 337px;
         height: 168px; }
-        .features .container .feature.medium.selected {
-          overflow: visible; }
-          .features .container .feature.medium.selected .back {
-            height: 337px;
-            -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
-            transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
         .features .container .feature.medium .front {
           max-height: 168px;
           -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
@@ -549,6 +543,9 @@ p {
 .extra-margin {
   margin-bottom: 0px !important;
   margin-top: 12px !important; }
+
+.min-width {
+  min-width: 336px !important; }
 
 /* Contact Info */
 .contact {

@@ -585,16 +585,16 @@ p {
 				width: 337px;
 				height: 168px;
 
-				&.selected{
-					overflow: visible;
+				// &.selected{
+				// 	overflow: visible;
 
-					.back{
-						height: 337px;
-						//max-height: 337px;
-	    				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
-	    				transition: all .5s cubic-bezier(0, 1, 1.0, 1);	
-    				}			
-				}
+				// 	.back{
+				// 		height: 337px;
+				// 		//max-height: 337px;
+	   			//  	-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+	   			//  	transition: all .5s cubic-bezier(0, 1, 1.0, 1);	
+    			// 	}			
+				// }
 				
 				.front{
     				max-height: 168px;
@@ -891,6 +891,10 @@ p {
 .extra-margin{
 	margin-bottom: 0px !important;
 	margin-top: 12px !important;
+}
+
+.min-width{
+	min-width: 336px !important;
 }
 
 
