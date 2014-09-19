@@ -483,7 +483,10 @@ p {
 
 			&.big{
 				width: 337px;
-				height: 337px;			
+				height: 337px;	
+
+				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+	    		transition: all .5s cubic-bezier(0, 1, 1.0, 1);		
 				
 				.front{
     				max-height: 337px;
@@ -585,17 +588,9 @@ p {
 				width: 337px;
 				height: 168px;
 
-				// &.selected{
-				// 	overflow: visible;
+				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+	    		transition: all .5s cubic-bezier(0, 1, 1.0, 1);
 
-				// 	.back{
-				// 		height: 337px;
-				// 		//max-height: 337px;
-	   			//  	-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
-	   			//  	transition: all .5s cubic-bezier(0, 1, 1.0, 1);	
-    			// 	}			
-				// }
-				
 				.front{
     				max-height: 168px;
     				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
@@ -690,6 +685,9 @@ p {
 			&.small{
 				width: 168px;
 				height: 168px;
+
+				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+	    		transition: all .5s cubic-bezier(0, 1, 1.0, 1);
 				
 				.front{
     				max-height: 168px;
@@ -709,6 +707,7 @@ p {
 
 						h4 {
 							font-size:17px;
+							line-height: 24px;
 						}
 
 						p {
@@ -786,11 +785,14 @@ p {
 			&.none{
 				width: 0px;
 				height: 0px;
+
+				-webkit-transition: all .2s linear;
+    			transition: all .2s linear;
 				
 				.front{
     				max-height: 0px;
-    				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
-    				transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+    				-webkit-transition: all .2s linear;
+    				transition: all .2s linear;
 
 					img{
 						width: 168px;
@@ -820,8 +822,8 @@ p {
 						right: 9px;
 						font-size: 0px;
 
-						-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
-		    			transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+						-webkit-transition: all .2s linear;
+		    			transition: all .2s linear;
 					}
 					
 				}
@@ -956,6 +958,14 @@ p {
 
 .min-width{
 	min-width: 336px !important;
+}
+
+.float-left{
+	float: left !important;
+}
+
+.float-right{
+	float: right !important;
 }
 
 

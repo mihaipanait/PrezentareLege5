@@ -17,13 +17,13 @@ app.factory('FeauresService', function() {
 					 "small", "small", "big"];
 	viewStates[2] = ["small", "small", "big",
 					 "medium", "big",
-					 "small", "small", "big"];
+					 "big", "small", "small"];
 	viewStates[3] = ["big", "small", "small",
 					 "big", "medium",
 					 "small", "small", "big"];
-	viewStates[4] = ["big", "small", "small",
+	viewStates[4] = ["small", "small", "big",
 					 "medium", "big",
-					 "small", "small", "big"];
+					 "big", "small", "small"];
 	viewStates[5] = ["big", "small", "small",
 					 "medium", "big",
 					 "big", "small", "small"];
