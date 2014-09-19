@@ -299,7 +299,7 @@ p {
 		position: relative;
 
 		.product {
-			margin-bottom: 60px;
+			margin-bottom: 90px;
 			padding-top: 25px;
 
 			h4 {
@@ -336,7 +336,7 @@ p {
 				background: url('../images/products/online.png') no-repeat center center;
 
 				&:hover{
-					background-image: url('../images/products/online-over.png');
+					//background-image: url('../images/products/online-over.png');
 				}
 			}
 
@@ -344,7 +344,7 @@ p {
 				background: url('../images/products/desktop.png') no-repeat center center;
 
 				&:hover{
-					background-image: url('../images/products/desktop-over.png');
+					//background-image: url('../images/products/desktop-over.png');
 				}
 			}
 
@@ -352,7 +352,7 @@ p {
 				background: url('../images/products/mobile.png') no-repeat center center;
 
 				&:hover{
-					background-image: url('../images/products/mobile-over.png');
+					//background-image: url('../images/products/mobile-over.png');
 				}
 			}
 
@@ -360,7 +360,7 @@ p {
 				background: url('../images/products/cloud.png') no-repeat center center;
 
 				&:hover{
-					background-image: url('../images/products/cloud-over.png');
+					//background-image: url('../images/products/cloud-over.png');
 				}
 			}
 		}		

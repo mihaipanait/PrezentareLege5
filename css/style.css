@@ -185,7 +185,7 @@ p {
   .products .container {
     position: relative; }
     .products .container .product {
-      margin-bottom: 60px;
+      margin-bottom: 90px;
       padding-top: 25px; }
       .products .container .product h4 {
         font-size: 20px;
@@ -209,20 +209,12 @@ p {
         height: 120px; }
       .products .container .product .online-btn {
         background: url("../images/products/online.png") no-repeat center center; }
-        .products .container .product .online-btn:hover {
-          background-image: url("../images/products/online-over.png"); }
       .products .container .product .desktop-btn {
         background: url("../images/products/desktop.png") no-repeat center center; }
-        .products .container .product .desktop-btn:hover {
-          background-image: url("../images/products/desktop-over.png"); }
       .products .container .product .mobile-btn {
         background: url("../images/products/mobile.png") no-repeat center center; }
-        .products .container .product .mobile-btn:hover {
-          background-image: url("../images/products/mobile-over.png"); }
       .products .container .product .cloud-btn {
         background: url("../images/products/cloud.png") no-repeat center center; }
-        .products .container .product .cloud-btn:hover {
-          background-image: url("../images/products/cloud-over.png"); }
 
 /* Features content */
 .features {
