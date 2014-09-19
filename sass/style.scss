@@ -786,13 +786,13 @@ p {
 				width: 0px;
 				height: 0px;
 
-				-webkit-transition: all .2s linear;
-    			transition: all .2s linear;
+				//-webkit-transition: all .2s linear;
+    			//transition: all .2s linear;
 				
 				.front{
     				max-height: 0px;
-    				-webkit-transition: all .2s linear;
-    				transition: all .2s linear;
+    				//-webkit-transition: all .2s linear;
+    				//transition: all .2s linear;
 
 					img{
 						width: 168px;
@@ -822,8 +822,8 @@ p {
 						right: 9px;
 						font-size: 0px;
 
-						-webkit-transition: all .2s linear;
-		    			transition: all .2s linear;
+						//-webkit-transition: all .2s linear;
+		    			//transition: all .2s linear;
 					}
 					
 				}
@@ -834,6 +834,9 @@ p {
 					.description-box{
 
 						.close{
+							width: 0px;
+							height: 0px;
+							font-size: 0px;
 
 						}
 

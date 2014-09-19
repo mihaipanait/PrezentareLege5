@@ -470,13 +470,9 @@ p {
           transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
       .features .container .feature.none {
         width: 0px;
-        height: 0px;
-        -webkit-transition: all .2s linear;
-        transition: all .2s linear; }
+        height: 0px; }
         .features .container .feature.none .front {
-          max-height: 0px;
-          -webkit-transition: all .2s linear;
-          transition: all .2s linear; }
+          max-height: 0px; }
           .features .container .feature.none .front img {
             width: 168px;
             height: auto; }
@@ -494,11 +490,13 @@ p {
             line-height: 0px;
             bottom: 9px;
             right: 9px;
-            font-size: 0px;
-            -webkit-transition: all .2s linear;
-            transition: all .2s linear; }
+            font-size: 0px; }
         .features .container .feature.none .back {
           height: 0px; }
+          .features .container .feature.none .back .description-box .close {
+            width: 0px;
+            height: 0px;
+            font-size: 0px; }
       .features .container .feature.selected .front {
         max-height: 0; }
     .features .container:hover .feature:not(:hover) .front img {
