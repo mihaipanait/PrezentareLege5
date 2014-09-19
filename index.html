@@ -121,7 +121,7 @@
 			<div class="col-md-6 col-lg-4 no-padding min-width">
 
 				<!-- Feature 0 Start -->
-				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[0], 'selected': featuresCtrl.isSelected[0]}">
+				<div class="feature {{featuresCtrl.currentState[0]}}" ng-class="{'active': featuresCtrl.isActive[0], 'selected': featuresCtrl.isSelected[0]}">
 					<div class="front">
 						<img src="images/features/1.jpg" ng-click="featuresCtrl.ToggleSelect(0)">
 						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(0)">
@@ -143,7 +143,7 @@
 				<!-- Feature End -->
 
 				<!-- Feature 1 Start -->
-				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[1], 'selected': featuresCtrl.isSelected[1]}">
+				<div class="feature {{featuresCtrl.currentState[1]}}" ng-class="{'active': featuresCtrl.isActive[1], 'selected': featuresCtrl.isSelected[1]}">
 					<div class="front">
 						<img src="images/features/8.jpg" ng-click="featuresCtrl.ToggleSelect(1)">
 						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(1)">
@@ -164,7 +164,7 @@
 				<!-- Feature End -->
 
 				<!-- Feature 2 Start -->
-				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[2], 'selected': featuresCtrl.isSelected[2]}">
+				<div class="feature {{featuresCtrl.currentState[2]}}" ng-class="{'active': featuresCtrl.isActive[2], 'selected': featuresCtrl.isSelected[2]}">
 					<div class="front">
 						<img src="images/features/2.jpg" ng-click="featuresCtrl.ToggleSelect(2)">
 						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(2)">
@@ -190,7 +190,7 @@
 			<div class="col-md-6 col-lg-4 no-padding min-width">
 
 				<!-- Feature 3 Start -->
-				<div class="feature medium" ng-class="{'active': featuresCtrl.isActive[3], 'selected': featuresCtrl.isSelected[3]}">
+				<div class="feature {{featuresCtrl.currentState[3]}}" ng-class="{'active': featuresCtrl.isActive[3], 'selected': featuresCtrl.isSelected[3]}">
 					<div class="front">
 						<img src="images/features/3.jpg" ng-click="featuresCtrl.ToggleSelect(3)">
 						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(3)">
@@ -211,7 +211,7 @@
 				<!-- Feature End -->
 
 				<!-- Feature 4 Start -->
-				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[4], 'selected': featuresCtrl.isSelected[4]}">
+				<div class="feature {{featuresCtrl.currentState[4]}}" ng-class="{'active': featuresCtrl.isActive[4], 'selected': featuresCtrl.isSelected[4]}">
 					<div class="front">
 						<img src="images/features/4.jpg" ng-click="featuresCtrl.ToggleSelect(4)">
 						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(4)">
@@ -237,7 +237,7 @@
 			<div class="col-md-6 col-lg-4 no-padding min-width">
 
 				<!-- Feature 5 Start -->
-				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[5], 'selected': featuresCtrl.isSelected[5]}">
+				<div class="feature {{featuresCtrl.currentState[5]}}" ng-class="{'active': featuresCtrl.isActive[5], 'selected': featuresCtrl.isSelected[5]}">
 					<div class="front">
 						<img src="images/features/6.jpg" ng-click="featuresCtrl.ToggleSelect(5)">
 						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(5)">
@@ -259,7 +259,7 @@
 				<!-- Feature End -->
 
 				<!-- Feature 6 Start -->
-				<div class="feature small" ng-class="{'active': featuresCtrl.isActive[6], 'selected': featuresCtrl.isSelected[6]}">
+				<div class="feature {{featuresCtrl.currentState[6]}}" ng-class="{'active': featuresCtrl.isActive[6], 'selected': featuresCtrl.isSelected[6]}">
 					<div class="front">
 						<img src="images/features/7.jpg" ng-click="featuresCtrl.ToggleSelect(6)">
 						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(6)">
@@ -280,7 +280,7 @@
 				<!-- Feature End -->
 
 				<!-- Feature 7 Start -->
-				<div class="feature big" ng-class="{'active': featuresCtrl.isActive[7], 'selected': featuresCtrl.isSelected[7]}">
+				<div class="feature {{featuresCtrl.currentState[7]}}" ng-class="{'active': featuresCtrl.isActive[7], 'selected': featuresCtrl.isSelected[7]}">
 					<div class="front">
 						<img src="images/features/5.jpg" ng-click="featuresCtrl.ToggleSelect(7)">
 						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(7)">

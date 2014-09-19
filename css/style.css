@@ -469,6 +469,35 @@ p {
           transform: scale(1.05, 1.05) translate(0px, 0px);
           -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
           transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
+      .features .container .feature.none {
+        width: 0px;
+        height: 0px; }
+        .features .container .feature.none .front {
+          max-height: 0px;
+          -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
+          transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
+          .features .container .feature.none .front img {
+            width: 168px;
+            height: auto; }
+          .features .container .feature.none .front .title-box {
+            width: 152px;
+            height: 68px;
+            top: 92px; }
+            .features .container .feature.none .front .title-box h4 {
+              font-size: 17px; }
+            .features .container .feature.none .front .title-box p {
+              display: none; }
+          .features .container .feature.none .front .more {
+            width: 0px;
+            height: 0px;
+            line-height: 0px;
+            bottom: 9px;
+            right: 9px;
+            font-size: 0px;
+            -webkit-transition: all 0.5s cubic-bezier(0, 1, 1, 1);
+            transition: all 0.5s cubic-bezier(0, 1, 1, 1); }
+        .features .container .feature.none .back {
+          height: 0px; }
       .features .container .feature.selected .front {
         max-height: 0; }
     .features .container:hover .feature:not(:hover) .front img {

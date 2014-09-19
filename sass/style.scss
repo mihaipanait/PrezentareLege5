@@ -783,6 +783,67 @@ p {
 				}
 			}
 
+			&.none{
+				width: 0px;
+				height: 0px;
+				
+				.front{
+    				max-height: 0px;
+    				-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+    				transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+
+					img{
+						width: 168px;
+						height: auto;
+
+					}
+
+					.title-box{
+						width: 152px;
+						height: 68px;
+						top: 92px;
+
+						h4 {
+							font-size:17px;
+						}
+
+						p {
+							display: none;
+						}
+					}
+
+					.more{
+						width: 0px;
+						height: 0px;
+						line-height: 0px;
+						bottom: 9px;
+						right: 9px;
+						font-size: 0px;
+
+						-webkit-transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+		    			transition: all .5s cubic-bezier(0, 1, 1.0, 1);
+					}
+					
+				}
+
+				.back{
+					height: 0px;
+
+					.description-box{
+
+						.close{
+
+						}
+
+						h4{
+						}
+
+						p{
+						}
+					}
+				}
+			}
+
 			&.selected{
 
 				.front{

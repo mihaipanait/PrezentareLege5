@@ -6,13 +6,70 @@ app.directive('prettyp', function(){
   }
 });
 
-app.controller('FeaturesController', ['$scope', function($scope) {
+app.factory('FeauresService', function() {
+
+	var viewStates = new Array(12);
+	viewStates[0] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[1] = ["medium", "big", "none",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[2] = ["small", "small", "big",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[3] = ["big", "small", "small",
+					 "big", "medium",
+					 "small", "small", "big"];
+	viewStates[4] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[5] = ["big", "small", "small",
+					 "medium", "big",
+					 "big", "small", "small"];
+	viewStates[6] = ["big", "small", "small",
+					 "medium", "big",
+					 "medium", "big", "none"];
+	viewStates[7] = ["big", "small", "small",
+					 "medium", "big",
+					 "medium", "none", "big"];
+	viewStates[8] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[9] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[10] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[11] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+	viewStates[12] = ["big", "small", "small",
+					 "medium", "big",
+					 "small", "small", "big"];
+
+
+     
+    var factory = {}; 
+ 
+    factory.getViewStates = function() {
+            return viewStates;
+        }
+ 
+    return factory;
+});
+
+app.controller('FeaturesController', ['$scope','FeauresService' , function($scope, FeauresService) {
 
   	this.isActive = new Array(12);
-  	this.isSelected = new Array(12);
+  	this.isSelected = new Array(12);  	
+  	this.allStates = FeauresService.getViewStates();
+  	this.currentState = this.allStates[0]; //default state
 
   	this.ToggleSelect = function(index){  		
-  		this.isSelected[index] = !this.isSelected[index];  	
+  		this.isSelected[index] = !this.isSelected[index]; 
+  		this.currentState =  this.allStates[index];	
   		this.deselectOthers(index);	
   	};
 
