@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <![endif]-->
-<!--[if gt IE 9]><!-->	
+<!--[if gt IE 9]><!-->
 <html ng-app="app"> <!--<![endif]-->
 <head>
 
@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if IE 8]>
-		<meta http-equiv="X-UA-Compatible" content="IE=8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		<link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" />
 	<![endif]-->
 
@@ -71,7 +71,7 @@
 			<ul class="nav navbar-nav">
 				<li><a data-scroll href="#about">Despre</a></li>
 				<li><a data-scroll href="#features">Facilități</a></li>
-				<li><a data-scroll href="#products">Produse</a></li>				
+				<li><a data-scroll href="#products">Produse</a></li>
 				<li><a data-scroll href="#contact">Contact</a></li>
 			</ul>
 		</div>
@@ -112,13 +112,13 @@
 
 <!-- Features -->
 <a class="anchor" id="features"></a>
-<div ng-cloak class="features ng-cloak" ng-controller="FeaturesController as featuresCtrl">
-	<div class="container">	
-		<div class="row">
-		<div class="col-md-12 col-lg-12">		
+<div ng-cloak class="features ng-cloak features-fixed-height" ng-controller="FeaturesController as featuresCtrl">
+	<div class="container fixed-height">
+		<div class="row container-fixed-width align-center">
+		<div class="col-md-12 col-lg-12">
 
 			<!-- Row One -->
-			<div class="col-md-6 col-lg-4 no-padding min-width">
+			<div class="col-md-6 col-lg-3 no-padding fixed-width align-center">
 
 				<!-- Feature 0 Start -->
 				<div class="feature {{featuresCtrl.currentState[0]}}" ng-class="{'active': featuresCtrl.isActive[0], 'selected': featuresCtrl.isSelected[0]}">
@@ -138,7 +138,7 @@
 							<p>Apelând la cautărea rapidă, prin simpla introducere în căsuţa de căutare a sintagmelor sau cuvintelor cheie semnificative, se va genera o lista de rezultate, ordonate în funcţie de relevanța lor, care scade pe măsura ce coborâți în lista de rezultate.</p>
 							<p>Nu mai pierdeţi timpul căutând acte care nu au nicio relevanţă pentru dvs.! Găsiţi fără efort documentele de interes şi informaţi-vă rapid!</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 
@@ -159,7 +159,7 @@
 							<p>Funcție unică și revoluționară, „Compară consolidări” reprezintă pentru utilizatorul de Lege5 una dintre cele mai importante instrumente de lucru pentru analiza comparativă și evidențierea modificărilor pe textul actului de interes. Aceasta este utilă pentru a confrunta versiunea consolidată curentă a unui act normativ, cu reglementările de la o anumită dată.</p>
 							<p>Astfel, dacă un act normativ are la nivel de paragraf trimiteri la multiple acte, atunci funcția permite compararea cu oricare dintre aceste acte.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 
@@ -180,40 +180,40 @@
 							<p>Trebuie să analizaţi nenumărate acte pentru a reconstitui cadrul legal al domeniului unui act normativ care vă interesează? Cu ajutorul istoricului legislativ, puteţi vedea cronologic și sintetizat informaţiile despre actele normative care reglementează un domeniu şi modificările suferite de acestea.</p>
 							<p>Ca şi celelalte funcţii de afişare relaţii la nivel de document şi Istoricul legislativ prezintă şi face trimitere la relaţiile suferite. Însă, de această dată, sunt prezentate relaţiile pe toate actele din domeniul din care care face parte actul de interes.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 			</div>
 			<!-- Row One End -->
 
 			<!-- Row Two -->
-			<div class="col-md-6 col-lg-4 no-padding min-width">
+			<div class="col-md-6 col-lg-3 no-padding fixed-width align-center">
 
 				<!-- Feature 3 Start -->
 				<div class="feature {{featuresCtrl.currentState[3]}}" ng-class="{'active': featuresCtrl.isActive[3], 'selected': featuresCtrl.isSelected[3]}">
 					<div class="front">
-						<img src="images/features/3.jpg" ng-click="featuresCtrl.ToggleSelect(3)">
-						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(3)">
+						<img src="images/features/4.jpg" ng-click="featuresCtrl.ToggleSelect(3)">
+						<div class="title-box magenta" ng-click="featuresCtrl.ToggleSelect(3)">
 							<h4>Versionare şi comparare text paragraf</h4>
 							<p>Corelarea actelor la nivel de paragraf, marcarea relațiilor la nivel de paragraf și compararea și evidențierea modificărilor.</p>
 						</div>
-						<div class="more blue" ng-click="featuresCtrl.ToggleSelect(3)">&gt;</div>
+						<div class="more magenta" ng-click="featuresCtrl.ToggleSelect(3)">&gt;</div>
 					</div>
-					<div class="back blue">
+					<div class="back magenta">
 						<div class="description-box">
 							<span class="close" ng-click="featuresCtrl.ToggleSelect(3)">x</span>
 							<h4>Versionare şi comparare text paragraf</h4>
 							<p>Una din funcțiile cheie ale aplicaţiei Lege5 o reprezintă corelarea actelor la nivel de paragraf, marcarea relațiilor la nivel de paragraf și compararea și evidențierea modificărilor la nivel de paragraf.</p>
 							<p>Așa cum am văzut și până acum, în aplicaţia Lege5 compararea versiunilor se face în profunzimea actului normativ până la nivel de paragraf. Așadar, folosind această funcție obțineți la nivel de paragraf modificat, evidențierea modificărilor survenite.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 
 				<!-- Feature 4 Start -->
 				<div class="feature {{featuresCtrl.currentState[4]}}" ng-class="{'active': featuresCtrl.isActive[4], 'selected': featuresCtrl.isSelected[4]}">
 					<div class="front">
-						<img src="images/features/4.jpg" ng-click="featuresCtrl.ToggleSelect(4)">
+						<img src="images/features/3.jpg" ng-click="featuresCtrl.ToggleSelect(4)">
 						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(4)">
 							<h4>Comentarii expert la nivel de paragraf</h4>
 							<p>Consultanţi cu înaltă competenţă profesională în domeniile juridic, fiscal, contabilitate oferă expertiză pentru înţelegerea aprofundată.</p>
@@ -227,14 +227,14 @@
 							<p>Consultanţi cu înaltă competenţă profesională în domeniile juridic, fiscal, contabilitate oferă expertiză pentru înţelegerea aprofundată a unor părți din documentele şi actele normative prezente în Lege5 Online.</p>
 							<p>Astfel, în Lege5.ro veți găsi comentarii ale expertilor la nivel de paragraf, pentru cele mai importante acte: Codul de procedură civilă, Codul muncii, Codul fiscal; Codul de procedură penală; Legea societăţilor comerciale; Legea contabilităţii.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 			</div>
 			<!-- Row Two End -->
 
 			<!-- Row Three -->
-			<div class="col-md-6 col-lg-4 no-padding min-width">
+			<div class="col-md-6 col-lg-3 no-padding fixed-width align-center">
 
 				<!-- Feature 5 Start -->
 				<div class="feature {{featuresCtrl.currentState[5]}}" ng-class="{'active': featuresCtrl.isActive[5], 'selected': featuresCtrl.isSelected[5]}">
@@ -254,7 +254,7 @@
 							<p>Avantajele aplicaţiei Lege5 Mobile cresc prin achiziţionarea unui abonament. Logarea se face cu user-ul şi parola aferente contului dvs. de Lege5 Online.</p>
 							<p>Aplicaţia dispune de un meniu de lucru intuitiv prin care navigarea în baza de date şi accesarea modulelor de lucru disponibile în contul dvs. de utilizator, devin acţiuni uşoare şi rapide.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 
@@ -275,32 +275,79 @@
 							<p>Notificările pe care vi le trimite Lege5 Online sunt notificări legislative şi notificări de sistem Lege5. Sistemul de notificări unic şi specific Lege5 vă permite să fiţi informaţi asupra noutăţilor legislative, oriunde vă aflaţi şi oricând aveţi timp sau nevoie să consultaţi legislaţia.</p>
 							<p>În aplicaţie primiţi notificări atât asupra modificărilor pe actele setate ca şi favorite de către dvs. cât şi asupra modificărilor/noutăţilor legislative de interes general. Cu un simplu clik pe modificările anunţate vedeţi detalierea acestora.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 
 				<!-- Feature 7 Start -->
 				<div class="feature {{featuresCtrl.currentState[7]}} float-right" ng-class="{'active': featuresCtrl.isActive[7], 'selected': featuresCtrl.isSelected[7]}">
 					<div class="front">
-						<img src="images/features/5.jpg" ng-click="featuresCtrl.ToggleSelect(7)">
-						<div class="title-box green" ng-click="featuresCtrl.ToggleSelect(7)">
-							<h4>Căutare şi urmărire dosare în instanţă</h4>
-							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns cea mai nouă modificare din parcursul dosarului.</p>
+						<img src="images/features/10.jpg" ng-click="featuresCtrl.ToggleSelect(7)">
+						<div class="title-box magenta" ng-click="featuresCtrl.ToggleSelect(7)">
+							<h4>Aplicaţie gratuită</h4>
+							<p>Descarcă gratuit aplicaţia din Google Play, Aple Store sau Windows Store, loghează­te şi bucură­te de facilităţile mobilităţii oferite.</p>
 						</div>
-						<div class="more green" ng-click="featuresCtrl.ToggleSelect(7)">&gt;</div>
+						<div class="more magenta" ng-click="featuresCtrl.ToggleSelect(7)">&gt;</div>
 					</div>
-					<div class="back green">
+					<div class="back magenta">
 						<div class="description-box">
 							<span class="close" ng-click="featuresCtrl.ToggleSelect(7)">x</span>
-							<h4>Căutare şi urmărire dosare în instanţă</h4>
-							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns cea mai nouă modificare din parcursul dosarului – adică data, ora la care va avea loc următoarea şedinţă de judecată şi instanţa unde se va judeca.</p>
-							<p>Cunoscând numărul dosarului sau cel puţin numele unei părţi implicate, oricine se poate informa asupra fluxului unui dosar în instanţă. În funcție de stadiul dosarului, veţi avea acces la o serie de informații publice cum ar fi numele părților implicate, instanța, secția, completul, căi de atac, istoricul ședințelor precum și soluțiile pe scurt ale acestora.</p>
+							<h4>Aplicaţie Mobile gratuită</h4>
+							<p>Descarcă gratuit aplicaţia din Google Play, Aple Store sau Windows Store, loghează­te şi bucură­te de facilităţile mobilităţii oferite.</p>
+							<p>Aplicaţia Lege5 Mobile permite: căutare în baza legislativă, căutare dosare în instanțele de judecată din România, urmărire modificări la nivel de paragraf, setare acte favorite, notificări legislative, vizualizare versiuni consolidate. Vei afla în timp real noutăţile legislative.</p>
 						</div>
-					</div>							
+					</div>
 				</div>
 				<!-- Feature End -->
 			</div>
 			<!-- Row Three End -->
+
+			<!-- Row Four -->
+			<div class="col-md-6 col-lg-3 no-padding fixed-width align-center">
+
+				<!-- Feature 8 Start -->
+				<div class="feature {{featuresCtrl.currentState[8]}}" ng-class="{'active': featuresCtrl.isActive[8], 'selected': featuresCtrl.isSelected[8]}">
+					<div class="front">
+						<img src="images/features/9.jpg" ng-click="featuresCtrl.ToggleSelect(8)">
+						<div class="title-box blue" ng-click="featuresCtrl.ToggleSelect(8)">
+							<h4>Aplicaţie cu acces în  Cloud</h4>
+							<p>Cel mai performant instrument de informare legislativă, se poate utiliza acum şi înCloud, oriunde şi oricând.</p>
+						</div>
+						<div class="more blue" ng-click="featuresCtrl.ToggleSelect(8)">&gt;</div>
+					</div>
+					<div class="back blue">
+						<div class="description-box">
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(8)">x</span>
+							<h4>Aplicaţie cu acces în Cloud</h4>
+							<p>Cel mai performant instrument de informare legislativă, se poate utiliza acum şi înCloud, oriunde şi oricând. Aveţi nevoie doar de un calculator conectat la internet şi de un cont de acces la Lege5 Online.</p>
+							<p>Lege5 Cloud se adresează profesioniștilor care doresc să lucreze cu funcții specificeversiunilor desktop dar care nu doresc să instaleze pe staţia de lucru o bază de date.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Feature End -->
+
+				<!-- Feature 9 Start -->
+				<div class="feature {{featuresCtrl.currentState[9]}}" ng-class="{'active': featuresCtrl.isActive[9], 'selected': featuresCtrl.isSelected[9]}">
+					<div class="front">
+						<img src="images/features/5.jpg" ng-click="featuresCtrl.ToggleSelect(9)">
+						<div class="title-box red" ng-click="featuresCtrl.ToggleSelect(9)">
+							<h4>Căutare şi urmărire dosare în instanţă</h4>
+							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns modificările din parcursul dosarului.</p>
+						</div>
+						<div class="more red" ng-click="featuresCtrl.ToggleSelect(9)">&gt;</div>
+					</div>
+					<div class="back red">
+						<div class="description-box">
+							<span class="close" ng-click="featuresCtrl.ToggleSelect(9)">x</span>
+							<h4>Căutare şi urmărire dosare în instanţă</h4>
+							<p>Procesul de căutare este rapid, performant şi generează rezultate relevante, aducând ca şi răspuns cea mai nouă modificare din parcursul dosarului – adică data, ora la care va avea loc următoarea şedinţă de judecată şi instanţa unde se va judeca.</p>
+							<p>Cunoscând numărul dosarului sau cel puţin numele unei părţi implicate, oricine se poate informa asupra fluxului unui dosar în instanţă. În funcție de stadiul dosarului, veţi avea acces la o serie de informații publice cum ar fi numele părților implicate, instanța, secția, completul, căi de atac, istoricul ședințelor precum și soluțiile pe scurt ale acestora.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Feature End -->
+			</div>
+			<!-- Row Four End -->
 
 			</div>
 		</div>
@@ -362,7 +409,7 @@
 			<div class="col-md-12 col-lg-12">
 				<h2>Lege5 - Viitorul Documentării Legislative</h2>
 				<p>Presat de termene limită? Prins între modificări şi amendamente? Lege5, noul soft realizat de Indaco Systems, transformă documentarea legislativă în cea mai rapidă şi plăcută etapă a muncii tale!</p>
-				<p>Destinat atât specialiştilor, cât şi novicilor, Lege5 este bazat pe un motor de căutare performant şi uşor de folosit. Actualizat constant, Lege5 oferă o bază de date ce acoperă atât legislaţia românească şi europeană, cât şi jurisprudenţa românească şi europeană. Baza include gratuit toate documentele publicate în Monitorul oficial, dar şi achiziţii publice, modele şi formulare.</p>	
+				<p>Destinat atât specialiştilor, cât şi novicilor, Lege5 este bazat pe un motor de căutare performant şi uşor de folosit. Actualizat constant, Lege5 oferă o bază de date ce acoperă atât legislaţia românească şi europeană, cât şi jurisprudenţa românească şi europeană. Baza include gratuit toate documentele publicate în Monitorul oficial, dar şi achiziţii publice, modele şi formulare.</p>
 				<p>Cu fiecare căutare, sistemul inteligent de filtrare îţi va oferi rezultate din toate ariile, la nivel de paragraf. Opţiunea Istoric Legislativ îţi va pune la îndemână toate versiunile actelor căutate, din 1900 până în prezent. Poţi căuta direct versiunea dorită sau poţi folosi sistemul de vizualizare implicit, în funcţie de nevoile şi stilul tău de navigare.</p>
 				<p>Lege5 nu este însă limitat la istoric şi funcţiile avansate de căutare. Dacă doreşti să îţi păstrezi actele pentru o consultare ulterioară, platforma îţi oferă opţiunea "Documente Favorite". Aici îţi poţi salva atât documentele, dar şi căutările şi comentariile.</p>
 				<p><a href="http://www.lege5.ro" target="_blank"><i class="icon-link-external"></i> Convinge-te singur de avantajele Lege5!</a></p>
@@ -399,7 +446,7 @@
 				<p>Poţi accesa foarte uşor Lege5.ro - oriunde şi oricand - în baza unui abonament care se adaptează nevoilor tale de informare şi la cel mai corect preţ de pe piaţă.</p>
 				<p>Fie că utilizezi Windows, Android, iOS sau Kindle, Lege5 Online este alegerea cea mai bună dacă vrei să fii informat rapid și corect asupra noutăților legislative.</p>
 				<div class="custom-btn-wrapper"><a href="http://www.lege5online.ro" target="_blank" class="custom-btn btn-primary-base btn-primary-rs">Află mai mult</a></div>
-			</div>				
+			</div>
 		</div>
 
 		<!-- Product - 3 -->
@@ -428,7 +475,7 @@
 
 <a class="anchor" id="products"></a>
 <div class="products">
-	<div class="container" ui-view="products-view" autoscroll="false">		
+	<div class="container" ui-view="products-view" autoscroll="false">
 	</div>
 </div>
 <!-- Products -->
@@ -439,7 +486,7 @@
 		<div class="row">
 
 			<!-- Carousel -->
-			<div id="pictures-slider" class="owl-carousel">				
+			<div id="pictures-slider" class="owl-carousel">
 				<div class="item col-lg-12">
 					<a href="images/gallery/1.jpg" class="prettyPhoto" rel="prettyPhoto[gallery-1]">
 						<div class="shot-wrap">
@@ -590,7 +637,7 @@
 				</ul>
 				<ul class="list-inline cinfo-social-buttons">
 					<li><a href="https://www.facebook.com/Lege5" class="btn btn-default btn-lg wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.1s"><i class="icon-facebook"></i></a></li>
-					<li><a href="https://twitter.com/lege5ro" class="btn btn-default btn-lg wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s"><i class="icon-twitter"></i></a></li>					
+					<li><a href="https://twitter.com/lege5ro" class="btn btn-default btn-lg wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s"><i class="icon-twitter"></i></a></li>
 					<li><a href="https://plus.google.com/+Lege5Ro" class="btn btn-default btn-lg wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s"><i class="icon-google"></i></a></li>
 				</ul>
 			</div>
@@ -608,7 +655,7 @@
 	</div>
 </div>
 <!-- Map -->
-    
+
 <!-- Footer Content -->
 <footer>
 	<div class="copyright">
@@ -635,7 +682,7 @@
 <script src="js/jquery.prettyphoto.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
-<script src='js/jquery.easing.1.3.js'></script> 
+<script src='js/jquery.easing.1.3.js'></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/smooth-scroll/bind-polyfill.min.js"></script>
 <script src="js/smooth-scroll/smooth-scroll.min.js"></script>
