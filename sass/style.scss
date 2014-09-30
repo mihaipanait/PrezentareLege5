@@ -395,7 +395,7 @@ $tile-size: 252;
 				background: url('../images/blue-more.png') repeat center center;
 			}
 			.green{
-				background: url('../images/green-more.png') repeat center center;
+				background: url('../images/green.png') repeat center center;
 			}
 			.red{
 				background: url('../images/red-more.png') repeat center center;
@@ -482,6 +482,17 @@ $tile-size: 252;
 							padding-top: 0px;
 							padding-bottom: 0px;
 							margin-bottom: 3px;
+						}
+
+						a.more{
+							float: right;
+							color: white;
+							font-size: 11px;
+							font-weight: 500;
+
+							&:hover{
+								color: #ddd;
+							}
 						}
 
 					}

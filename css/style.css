@@ -237,7 +237,7 @@ p {
       .features .container .feature .blue {
         background: url("../images/blue-more.png") repeat center center; }
       .features .container .feature .green {
-        background: url("../images/green-more.png") repeat center center; }
+        background: url("../images/green.png") repeat center center; }
       .features .container .feature .red {
         background: url("../images/red-more.png") repeat center center; }
       .features .container .feature .magenta {
@@ -297,6 +297,13 @@ p {
             padding-top: 0px;
             padding-bottom: 0px;
             margin-bottom: 3px; }
+          .features .container .feature .back .description-box a.more {
+            float: right;
+            color: white;
+            font-size: 11px;
+            font-weight: 500; }
+            .features .container .feature .back .description-box a.more:hover {
+              color: #ddd; }
       .features .container .feature.big {
         width: 252px;
         height: 252px;
